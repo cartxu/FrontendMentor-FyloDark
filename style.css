@@ -42,7 +42,7 @@ body {
 /* TEXTOS, ENLACES, BOTONES E ICONOS */
 
 h2 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-family: var(--font-action);
     line-height: 4rem;
 }
@@ -115,7 +115,7 @@ header {
 nav {
     display: flex;
     margin: 0;
-    padding: 6rem 4rem;
+    padding: 4rem 1rem;
     justify-content: space-between;
 }
 
@@ -127,7 +127,7 @@ nav {
 .navigation li {
     list-style: none;
     display: inline-block;
-    margin: auto 4rem;
+    margin: auto 1rem;
 }
 
 /* HEADER  */
@@ -137,11 +137,30 @@ nav {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    min-height: 100vh;
 }
 
 .text-cont {
     margin: 1rem;
     width: 40%;
+}
+
+.text-cont p {
+    width: 95%;
+}
+
+.container button {
+    padding: 1.5rem 7rem;
+}
+
+.container img {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .text-cont {
+        width:80%
+    }
 }
 
 /* GRID FEATURES SECTION 1 */
@@ -170,6 +189,14 @@ nav {
 .ft-title {
     font-weight: 700;
     margin: 1rem;
+}
+
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
+    
 }
 
 /* STAY PRODUCTIVE SECTION  */
@@ -210,6 +237,18 @@ nav {
     color: var(--white);
     border-bottom: 1px solid var(--white);
 }
+
+@media (max-width: 768px) {
+    .info{
+        flex-direction: column;
+    }
+
+    .pic, .text-info {
+        width: 100%;
+    }
+    
+}
+
 
 /* TESTIMONIALS SECTION */
 
@@ -259,6 +298,16 @@ nav {
     z-index: 0;
 }
 
+@media (max-width: 768px) {
+    .team {
+        flex-direction: column;
+    }
+
+    .quo {
+        top: 8vh;
+    }
+}
+
 /* access area  */
 
 .access {
@@ -287,6 +336,24 @@ input {
 
 .mail-input .btn {
     width: 40%;
+}
+
+@media (max-width:1200px) {
+    input {
+        width: 100%;
+        
+    }
+    
+    .mail-input .btn {
+        width: 100%;
+        margin: 2rem auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .access {
+        width: 90%;
+    }
 }
 
 /* footer */
@@ -353,3 +420,16 @@ footer {
     width: 20%;
 }
 
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .uno, .dos, .tres, .cuatro, .cinco {
+        width: 100%;
+    }
+
+    .cinco {
+       text-align: center;
+    }
+}
